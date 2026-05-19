@@ -1,0 +1,24 @@
+{
+  "name": "testingclaude",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravbhandari1981/testingclaude.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gauravbhandari1981/testingclaude/issues"
+  },
+  "homepage": "https://github.com/gauravbhandari1981/testingclaude#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  }
+}
