@@ -10,7 +10,7 @@ let photos = [];
 let current = 0;
 
 // ── Upload ────────────────────────────────────────────────
-dropzone.addEventListener('click', () => fileInput.click());
+dropzone.addEventListener('click', e => { if (e.target.tagName !== 'LABEL') fileInput.click(); });
 fileInput.addEventListener('change', e => addFiles(e.target.files));
 
 dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('drag-over'); });
