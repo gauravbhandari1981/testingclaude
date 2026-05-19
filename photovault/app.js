@@ -23,9 +23,11 @@ dropzone.addEventListener('drop', e => {
 
 function addFiles(files) {
   [...files].filter(f => f.type.startsWith('image/')).forEach(file => {
-    const url = URL.createObjectURL(file);
-    photos.push({ url, name: file.name, size: formatSize(file.size) });
-    renderCard(photos.length - 1);
+    for (let i = 0; i < 2; i++) {
+      const url = URL.createObjectURL(file);
+      photos.push({ url, name: file.name, size: formatSize(file.size) });
+      renderCard(photos.length - 1);
+    }
   });
   updateCount();
 }
